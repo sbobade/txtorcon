@@ -1,21 +1,32 @@
 Source: txtorcon
-Maintainer: meejah <meejah@meejah.ca>
 Section: python
 Priority: optional
-Build-Depends: python-support (>=0.6)
-Standards-Version: 3.8.4
-XS-Python-Version: >= 2.6
+Maintainer: Shrikant Bobade <shrikant_bobade@mentor.com>
+Build-Depends: debhelper,
+               dh-python,
+               python-all,
+               python-setuptools,
+               python-ipaddress,
+               python-enum34,
+               python-automat,
+               python-geoip,
+               python-mock,
+               python-twisted,
+               python3-all,
+               python3-setuptools,
+               python3-automat,
+               python3-geoip,
+               python3-mock,
+               python3-twisted,
+Standards-Version: 4.3.0
+Homepage: https://pythonhosted.org/txtorcon
 
 Package: python-txtorcon
 Architecture: all
-Homepage: http://github.com/meejah/txtorcon
-Description: Twisted-based asynchronous Tor control protocol implementation
- The main abstraction of this library is txtorcon.TorControlProtocol which presents
- an asynchronous API to speak the Tor client protocol in Python. txtorcon also
- provides abstractions to track and get updates about Tor's state (txtorcon.TorState)
- and current configuration (including writing it to Tor or disk) in txtorcon.TorConfig,
- along with helpers to asynchronously launch slave instances of Tor including Twisted endpoint support.
-Depends: ${misc:Depends}, ${python:Depends}, python-twisted (>= 11.1.0), python-geoip, python-ipaddr (>=2.1.10)
-XB-Python-Version: ${python:Versions}
-Provides: ${python:Provides}
+Depends: python-geoip, python-twisted, python-zope.interface, python-automat, python-incremental, python-ipaddress, python-enum34, python:any (>= 2.7.5-5~)
+Description: TODO
 
+Package: python3-txtorcon
+Architecture: all
+Depends: python3-geoip, python3-twisted, python3-zope.interface, python3-automat, python3-incremental, python-ipaddress, python-enum34, python:any (>= 2.7.5-5~)
+Description: TODO
