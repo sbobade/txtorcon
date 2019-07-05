@@ -21,10 +21,10 @@ Homepage: https://pythonhosted.org/txtorcon
 
 Package: python-txtorcon
 Architecture: all
-Depends: python-geoip, python-twisted, python-zope.interface, python-automat, python-incremental, python-ipaddress, python-enum34, python:any (>= 2.7.5-5~)
+Depends: python-geoip, python-twisted, python-zope.interface, python-automat, python-incremental, python:any (>= 2.7.5-5~)
 Description: TODO
 
 Package: python3-txtorcon
 Architecture: all
-Depends: python3-geoip, python3-twisted, python3-zope.interface, python3-automat, python3-incremental, python:any (>= 2.7.5-5~)
+Depends: python3-geoip, python3-twisted, python3-zope.interface, python3-automat, python3-incremental, python3:any
 Description: TODO
