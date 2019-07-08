@@ -9,22 +9,20 @@ Build-Depends: debhelper,
                python-automat,
                python-geoip,
                python-mock,
-               python-twisted,
                python3-all,
                python3-setuptools,
                python3-automat,
                python3-geoip,
                python3-mock,
-               python3-twisted,
 Standards-Version: 4.3.0
 Homepage: https://pythonhosted.org/txtorcon
 
 Package: python-txtorcon
 Architecture: all
-Depends: python-geoip, python-twisted, python-zope.interface, python-automat, python-incremental, python:any (>= 2.7.5-5~)
+Depends: python-geoip, python-zope.interface, python-automat, python-incremental, python:any (>= 2.7.5-5~)
 Description: TODO
 
 Package: python3-txtorcon
 Architecture: all
-Depends: python3-geoip, python3-twisted, python3-zope.interface, python3-automat, python3-incremental, python3:any
+Depends: python3-geoip, python3-zope.interface, python3-automat, python3-incremental, python3:any
 Description: TODO
